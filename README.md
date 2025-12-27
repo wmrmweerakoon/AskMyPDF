@@ -1,3 +1,7 @@
+![AI content finder](https://github.com/wmrmweerakoon/ai-content-finder/blob/main/client/src/assets/Screenshot%202025-12-26%20125229.png?raw=true)
+![AI content finder](https://github.com/wmrmweerakoon/ai-content-finder/blob/main/client/src/assets/Screenshot%202025-12-26%20125400.png?raw=true)
+![AI content finder](https://github.com/wmrmweerakoon/ai-content-finder/blob/main/client/src/assets/Screenshot%202025-12-26%20125435.png?raw=true)
+
 # AI PDF Content Finder
 
 An intelligent web application that extracts text from PDF files and uses Google's Gemini AI to answer questions based on the PDF content.
@@ -20,17 +24,6 @@ An intelligent web application that extracts text from PDF files and uses Google
 - Node.js + Express
 - PDF.js for text extraction
 - Google Gemini API for AI responses
-
-## 🚀 Quick Deploy
-
-Want to deploy this? Check out [DEPLOYMENT.md](./DEPLOYMENT.md) for detailed deployment instructions to Railway, Render, or other platforms.
-
-**Quick Railway Deploy:**
-1. Push your code to GitHub
-2. Go to [railway.app](https://railway.app) and create a new project
-3. Connect your GitHub repo
-4. Add environment variable: `GEMINI_API_KEY=your_key`
-5. Deploy! 🎉
 
 ## 📦 Installation
 
