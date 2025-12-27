@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: ai-content-finder
+    env: node
+    buildCommand: cd server && npm install && cd ../client && npm install --include=dev && npm run build
+    startCommand: cd server && npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: GEMINI_MODEL
+        value: gemini-2.5-flash
+      - key: GEMINI_API_VERSION
+        value: v1beta
+
