@@ -36,8 +36,8 @@ An intelligent web application that extracts text from PDF files and uses Google
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/wmrmweerakoon/ai-content-finder.git
-   cd ai-content-finder
+   git clone https://github.com/wmrmweerakoon/AskMyPDF.git
+   cd AskMyPDF
    ```
 
 2. **Install dependencies**
