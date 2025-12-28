@@ -14,7 +14,7 @@ const app = express();
 
 // CORS configuration
 const corsOptions = {
-  origin: process.env.FRONTEND_URL || "*",
+  origin: process.env.FRONTEND_URL || "*", // Your Firebase frontend URL
   credentials: true,
 };
 app.use(cors(corsOptions));
@@ -31,28 +31,15 @@ app.get("/health", (req, res) => {
 // API routes
 app.use("/api/pdf", pdfRoutes);
 
-// Serve static files from React app in production
-if (process.env.NODE_ENV === "production") {
-  const clientBuildPath = path.join(__dirname, "../../client/dist");
-  app.use(express.static(clientBuildPath));
-  
-  // Handle React routing - return all requests to React app
-  app.get("*", (req, res) => {
-    res.sendFile(path.join(clientBuildPath, "index.html"));
-  });
-} else {
-  // Development route
-  app.get("/", (req, res) => {
-    res.json({ message: "Backend is running..." });
-  });
-}
+// Only include a simple route for non-production or testing
+app.get("/", (req, res) => {
+  res.json({ message: "Backend is running..." });
+});
 
 const PORT = Number(process.env.PORT) || 5000;
 
-// Explicitly bind to 0.0.0.0 so Render's port scanner can detect the service
+// Bind to 0.0.0.0 so Render can detect the service
 app.listen(PORT, "0.0.0.0", () => {
   console.log(`Server running on port ${PORT}`);
-  if (process.env.NODE_ENV === "production") {
-    console.log("Serving production build");
-  }
+  console.log(`Environment: ${process.env.NODE_ENV || "development"}`);
 });
