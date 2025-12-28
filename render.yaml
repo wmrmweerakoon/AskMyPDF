@@ -1,9 +1,11 @@
 services:
   - type: web
-    name: ai-content-finder
+    name: askmypdf-backend
     env: node
-    buildCommand: cd server && npm install && cd ../client && npm install --include=dev && npm run build
-    startCommand: cd server && npm start
+    plan: free
+    rootDir: server
+    buildCommand: npm install
+    startCommand: npm start
     envVars:
       - key: NODE_ENV
         value: production
@@ -15,4 +17,3 @@ services:
         value: gemini-2.5-flash
       - key: GEMINI_API_VERSION
         value: v1beta
-
