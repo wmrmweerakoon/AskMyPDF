@@ -5,15 +5,10 @@ An intelligent web application that extracts text from PDF files and uses Google
 
 ---
 
-## 🚀 Live Demo
-
 🔗 **Live Application:**  
 👉 [https://pdf-ai-finder.web.app/]
 
-🎥 **Live Demo Video (Optional):**  
-👉 https://your-demo-video-link-here
-
-> The live demo showcases uploading PDFs, asking questions with page references, and AI-powered answers in real time.
+![AskMyPDF Screenshot](https://github.com/wmrmweerakoon/ai-student-assistant/blob/main/Screenshot%202025-09-26%20142838.png?raw=true)
 
 ---
 
