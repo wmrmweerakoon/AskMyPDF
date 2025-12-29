@@ -1,10 +1,21 @@
-![AI content finder](https://github.com/wmrmweerakoon/ai-content-finder/blob/main/client/src/assets/Screenshot%202025-12-26%20125229.png?raw=true)
-![AI content finder](https://github.com/wmrmweerakoon/ai-content-finder/blob/main/client/src/assets/Screenshot%202025-12-26%20125400.png?raw=true)
-![AI content finder](https://github.com/wmrmweerakoon/ai-content-finder/blob/main/client/src/assets/Screenshot%202025-12-26%20125435.png?raw=true)
 
 # AI PDF Content Finder
 
 An intelligent web application that extracts text from PDF files and uses Google's Gemini AI to answer questions based on the PDF content.
+
+---
+
+## 🚀 Live Demo
+
+🔗 **Live Application:**  
+👉 https://your-live-app-url-here
+
+🎥 **Live Demo Video (Optional):**  
+👉 https://your-demo-video-link-here
+
+> The live demo showcases uploading PDFs, asking questions with page references, and AI-powered answers in real time.
+
+---
 
 ## 🚀 Features
 
@@ -18,12 +29,14 @@ An intelligent web application that extracts text from PDF files and uses Google
 ### Frontend
 - React + TypeScript
 - Vite
-- TailwindCSS
+- Tailwind CSS
 
 ### Backend
-- Node.js + Express
-- PDF.js for text extraction
-- Google Gemini API for AI responses
+- Node.js
+- Express.js
+- PDF.js (`pdfjs-dist`)
+- Google Gemini API
+- SQLite (conversation history & metadata)
 
 ## 📦 Installation
 
