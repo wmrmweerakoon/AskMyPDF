@@ -8,7 +8,7 @@ An intelligent web application that extracts text from PDF files and uses Google
 🔗 **Live Application:**  
 👉 [https://pdf-ai-finder.web.app/]
 
-![AskMyPDF Screenshot](https://github.com/wmrmweerakoon/ai-student-assistant/blob/main/Screenshot%202025-09-26%20142838.png?raw=true)
+![AskMyPDF Screenshot](https://github.com/wmrmweerakoon/AskMyPDF/blob/main/Screenshot%202025-12-26%20125400.png)
 
 ---
 
